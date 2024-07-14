@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 *⭐ بريميام* : ${prem ? 'بريميام' : 'عادي'}
 `
   conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
-  m.react(done)
+
 }
 handler.help = ['profile']
 handler.tags = ['group']
