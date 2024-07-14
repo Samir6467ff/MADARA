@@ -29,9 +29,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `alucard`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
 *مــرحــبــا بــك/ي* ${taguser}
 ╗──────¤مــعلـ🛖ـومــاتــك
-> •▫️مــســتــواك : ${level}
-> •▫️بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
-> •▫️رتــبــتــك : ${role}
+> •مــســتــواك : ${level}
+> •بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
+> •رتــبــتــك : ${role}
 *• ──╾⊱﹝⚜️﹞⊰╼── •*
 ╗───¤مــعلــومــات الــ🤖بــوت
 > •إســم الــبــوت: مــادار🐢ــا 
