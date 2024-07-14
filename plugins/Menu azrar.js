@@ -27,7 +27,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const harley = 'https://telegra.ph/file/ee91ff927b094cba06a3b.png'
  
 conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `alucard`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
-*مــرحــبــا بــك/ي* ${taguser}
+*مــرحــبــا بــك/ي* @${who.replace(/@.+/, '')}
 ╗──────¤مــعلـ🛖ـومــاتــك
 > •مــســتــواك : ${level}
 > •بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
