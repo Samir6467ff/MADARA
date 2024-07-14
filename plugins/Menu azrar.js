@@ -23,7 +23,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let more = String.fromCharCode(8206);
     let readMore = more.repeat(850);
     let { name, limit, lastclaim, registered, regTime, age } = global.db.data.users[who]
-  //let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let mentionedJid = [who]
     let username = conn.getName(who)
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
