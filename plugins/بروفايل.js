@@ -19,10 +19,10 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 let str =
 `*┌───⊷﹝بــروفــايــل﹞⊷*
-*▢〉🔖‣  الأســـــم :**• ${registered ? '' + name + ' ': ''}• @${who.replace(/@.+/, '')}*
-*🔗 : wa.me/${who.split`@`[0]}*
+*▢〉🔖‣  الأســـــم :${taguser ? '' + name + ' ': ''}• @${who.replace(/@.+/, '')}*
+*▢〉🔗 : wa.me/${who.split`@`[0]}*
 *▢〉📱‣ : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}*
-${registered ? '*▢〉🎈‣ عـــمـــر:' + age + 'ســـنـــوات*' : ''}
+${registered ? '*▢〉🎈‣ العـــمـــر:' + age + 'ســـنـــوات*' : ''}
 *▢〉📇‣ مـــســـجـــل : ${registered ? '✅' : '❌'}*
 *└──────────────────⊷*`.trim()
     conn.sendFile(m.chat, pp, 'pp.jpg', str, fkontak, false, { contextInfo: { mentionedJid }}) 
