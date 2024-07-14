@@ -19,9 +19,7 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 let str =
 `*┌───⊷﹝بــروفــايــل﹞⊷*
-*▢〉🔖‣  الأســـــم :* 
-*•* ${registered ? '' + name + ' ': ''}
-*• @${who.replace(/@.+/, '')}*
+*▢〉🔖‣  الأســـــم :**• ${registered ? '' + name + ' ': ''}• @${who.replace(/@.+/, '')}*
 *🔗 : wa.me/${who.split`@`[0]}*
 *▢〉📱‣ : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}*
 ${registered ? '*▢〉🎈‣ عـــمـــر:' + age + 'ســـنـــوات*' : ''}
@@ -32,5 +30,5 @@ ${registered ? '*▢〉🎈‣ عـــمـــر:' + age + 'ســـنـــو�
 }
 handler.help = ['profile [@user]']
 handler.tags = ['xp']
-handler.command = /^perfil|profile?$/i
+handler.command = /^بروفايل|profile?$/i
 export default handler
