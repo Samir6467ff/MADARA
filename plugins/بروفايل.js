@@ -20,7 +20,7 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 let str =
 `*┌───⊷﹝بــروفــايــل﹞⊷*
-*▢〉🔖‣  الأســـــم :${taguser ? '' + name + ' ': ''}• @${who.replace(/@.+/, '')}*
+*▢〉🔖‣  الأســـــم :@${who.replace(/@.+/, '')}*
 *▢〉🔗 :* wa.me/${who.split`@`[0]}
 *▢〉📱‣ :* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ${registered ? '*▢〉🎈‣ العـــمـــر:' + age + 'ســـنـــوات*' : ''}
