@@ -27,7 +27,7 @@ conn.sendFile(m.chat, url, 'tiktok.mp4', `⛱️ ${mid.user}\n*${nickname}*\n${d
 handler.limit = 2
 } catch (e4) {
 try{
-const response=await fetch(`https://delirius-api-oficial.vercel.app/api/tiktok?url=${args[0]}`)
+const response=await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/tiktokv2?url=${args[0]}`)
 const dataR = await response.json()
 const { author,title, meta} = dataR.data
 conn.sendFile(m.chat, meta.media[0].org, 'tiktok.mp4', `⛱️ ${mid.user}\n*${author.nickname}*\n${wm}`.trim(), m) 
@@ -39,7 +39,7 @@ handler.limit = false
 }}}}}}
 handler.help = ['tiktok']
 handler.tags = ['dl']
-handler.command = /^(tt|tiktok)(تيك|تيكتوك)?$/i
+handler.command = /^(تيك|tiktok)(تيك|تيكتوك)?$/i
 //handler.limit = 2
 export default handler
 
