@@ -24,25 +24,25 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   // • @${who.replace(/@.+/, '')}
   let str = `*🪪 Name:* ${username}${about ? '\n\n 🎌 *Bio:* ' + about : ''}
 
-*⚠️ Warnings:* ${warn}/${maxwarn}
+*⚠️ الانذارات:* ${warn}/${maxwarn}
 
-*💰 Gold :* ${credit}
+*💰 دولاراتك :* ${credit}
 
-*✨ Level* : ${level}
+*✨ لفل* : ${level}
 
-*⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Ready for *${usedPrefix}levelup*` : `*${math}xp* missing to level up`}
+*⬆️ اكس بي* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Ready for *${usedPrefix}levelup*` : `*${math}xp* missing to level up`}
 
-*🏆 Rank:* ${role}
+*🏆 رتبتك :* ${role}
 
-*📇 Registered :* ${registered ? 'Yes' : 'No'}
+*📇 مسجل :* ${registered ? 'يب مسجل' : 'لا مش مسجل'}
 
-*⭐ Premium* : ${prem ? 'Yes' : 'No'}
+*⭐ بريميام* : ${prem ? 'بريميام' : 'عادي'}
 `
   conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
   m.react(done)
 }
 handler.help = ['profile']
 handler.tags = ['group']
-handler.command = ['profile']
+handler.command = ['بروفايل']
 
 export default handler
