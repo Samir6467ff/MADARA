@@ -48,6 +48,7 @@ if (!m)
 return
 m.exp = 0
 m.limit = false
+m.dollar = false
 m.money = false
 try {
 // TODO: use loop to insert data instead of this
@@ -61,6 +62,7 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
+if (!isNumber(user.dollar)) user.dollar = 0
 if (!('premium' in user)) user.premium = false
 if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
@@ -614,6 +616,7 @@ dog: 0,
 dogexp: 0,
 doglastfeed: 0,
 dory: 0,
+dollar: 0,
 dragon: 0,
 dragonexp: 0,
 dragonlastfeed: 0,
