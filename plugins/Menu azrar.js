@@ -43,7 +43,11 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
 *~⌬ تــ✍︎ــوقــيــع ↡~*🖋️
 *⌞⚜️┊𝐒𝐩𝐞𝐞𝐝 ス 𝐊.𝐠.𝐦┊⚜️⌝*
 *• ──╾⊱﹝⚜️﹞⊰╼── •*
-> Copyright © 2024 Harley`,subtitle: "HARLEY",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: harley } }, { upload: conn.waUploadToServer }, {quoted: m}))},nativeFlowMessage: { buttons: [
+> Copyright © 2024 Harley`,subtitle: "HARLEY",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: harley } }, { upload: conn.waUploadToServer }, {quoted: m}))},
+                    contextInfo: {
+                        mentionedJid: [m.sender],
+                        isForwarded: false,
+                    },nativeFlowMessage: { buttons: [
 
 
                             {
@@ -116,7 +120,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     id: '.م9'
                                                 },
                                                 {
-                                                    header: 'الــقـ🔍ـســم الــحــاديــة عــشــر',
+                                                    header: 'الــقـ🔍ـســم �لــحــاديــة عــشــر',
                                                     title: 'استدعاء_قسم_ابحث #البحث',
                                                     description: '',
                                                     id: '.م12'
