@@ -30,7 +30,7 @@ const handler = async (m, { conn, usedPrefix }) => {
     console.error('خطأ في قراءة المجلد أو ملفات الجلسة:', err);
     await conn.sendMessage(m.chat, {text: '*[❗] حدث خطأ عند إزالة ملفات الجلسة*'}, {quoted: m});
   }
-  await conn.sendMessage(m.chat, {text: `*┊˹🚀˼┊هل تراني الآن يا ياحب؟┊˹🚀˼┊*},{quoted: m});
+  await conn.sendMessage(m.chat, {text: `${*┊˹🚀˼┊هل تراني الآن يا ياحب؟┊˹🚀˼┊*`},{quoted: m});
 };
 handler.help = ['fixmsgespera'];
 handler.tags = ['fix'];
