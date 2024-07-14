@@ -24,8 +24,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   // • @${who.replace(/@.+/, '')}
   let str = `*🪪 Name:* ${username}${about ? '\n\n 🎌 *Bio:* ' + about : ''}
 
-*⚠️ الانذارات:* ${warn}/${maxwarn}
-
 *💰 دولاراتك :* ${credit}
 
 *✨ لفل* : ${level}
