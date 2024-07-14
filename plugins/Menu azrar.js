@@ -29,7 +29,7 @@ const mentionId = m.key.participant || m.key.remoteJid;
   const harley = 'https://telegra.ph/file/ee91ff927b094cba06a3b.png'
  
 conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
-*مــرحــبــا بــك/ي* ${taguser}@${mentionId.split('@')[0]}
+*مــرحــبــا بــك/ي* ${taguser@mentionId.split('@')[0]}
 ╗──────¤مــعلـ🛖ـومــاتــك
 > •مــســتــواك : ${level}
 > •بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
