@@ -24,7 +24,7 @@ const handler = async (m, { conn, usedPrefix }) => {
     if (filesDeleted === 0) {
       await conn.sendMessage(m.chat, {text: '*[❗] لم يتم العثور على ملف يتضمن معرف الدردشة*'}, {quoted: m});
     } else {
-      await conn.sendMessage(m.chat, {text: `*┊˹🚀˼┊ تم حذف [ ${filesDeleted} ] ملف من الجلسة*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: `*┊˹🚀˼┊ تم حذف [ ${filesDeleted} ] ملف من الجلسة┊˹🚀˼┊*`}, {quoted: m});
     }
   } catch (err) {
     console.error('خطأ في قراءة المجلد أو ملفات الجلسة:', err);
