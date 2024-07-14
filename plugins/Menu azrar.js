@@ -9,7 +9,6 @@ import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto, prepareWAMessageMedia } = pkg;
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-const mentionId = m.key.participant || m.key.remoteJid;
     let d = new Date(new Date + 3600000);
     let locale = 'ar';
     let week = d.toLocaleDateString(locale, { weekday: 'long' });
@@ -27,6 +26,7 @@ const mentionId = m.key.participant || m.key.remoteJid;
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
   await conn.sendMessage(m.chat, { react: { text: '📂', key: m.key } })
   const harley = 'https://telegra.ph/file/ee91ff927b094cba06a3b.png'
+  const mentionId = m.key.participant || m.key.remoteJid;
  
 conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
 *مــرحــبــا بــك/ي* @${mentionId.split('@')[0]}
