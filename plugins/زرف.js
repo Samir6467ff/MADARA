@@ -33,7 +33,7 @@ const handler = async (m, { conn, participants, usedPrefix, command }) => {
 
 handler.help = ['kickall'];
 handler.tags = ['group'];
-handler.command = ['زرف', 'هاك'];
+handler.command = ['ازرف', 'هاك'];
 handler.group = true;
 handler.owner = true;
 handler.botAdmin = true;
