@@ -5,7 +5,7 @@ throw false
 }
 let pesan = args.join` `
 let oi = `❐ رسالة : ${pesan}`
-let teks = `*┌───⊷﹝المنشن⊰⚜⊱الجماعي﹞+⊷*\n❏ نقابة : *${groupMetadata.subject}*\n❏ الاعضاء : \n${oi}\n\n`
+let teks = `*┌───⊷﹝المنشن⊰⚜⊱الجماعي﹞+⊷*\n❏ نقابة : *${groupMetadata.subject}*\n❏ الاعضاء : \n${oi}\n`
 for (let mem of participants) {
 teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `*└──────────────────⊷*`
