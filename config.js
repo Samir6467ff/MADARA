@@ -159,7 +159,7 @@ global.eg = '╰⊱💚⊱ *تم بنجاح | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱�
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓 : 𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓"
+global.wm = "𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓"
 global.igfg = "𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓"
 global.nomorown = "972546887176"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
