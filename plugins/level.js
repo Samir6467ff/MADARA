@@ -89,11 +89,15 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 if (before !== user.level) {
 let teks = `عاش يا حب! ${conn.getName(m.sender)} المستوي: ${user.level}`
-let str = `╭━━━[ *~الـتصـنـيف~ | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
-┇👀 *المستوي السابق :* *${before}*
-┇🎉 *المستوي الحالي :* *${user.level}*
-┇♟️ *التصنيف :* ${role} 
-╰━━━〔 👑 15.4.9 〕━━⬣`.trim()
+let str = `👑 𝐌𝐀𝐃𝐀𝐑𝐀-𝐁𝐎𝐓 - 𝐇𝐀𝐑𝐋𝐄𝐘
+*╭━⊰ ${name}⁩ ⊱━დ*
+*┃ الـمـسـتـوي السابق: ${before}*
+*┃ الـمـسـتـوي الحالي: ${user.level}*
+*┃ رتـبــتـك:* *‎${role}*
+> 𝐌𝐀𝐃𝐀𝐑𝐀-𝐁𝐎𝐓 © 𝐁𝐘 𝐇𝐀𝐑𝐋𝐄𝐘
+*╰━⊰ 🎖️ مستوى جديد 🎖️ ⊱━━დ*
+
+*_لقد وصلت إلى مستوى جديد!!!_*
 try {
 const img = await levelup(teks, user.level)
 conn.sendMessage(m.chat, {image: {url: gataImg}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
