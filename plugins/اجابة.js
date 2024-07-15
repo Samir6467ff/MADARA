@@ -42,7 +42,7 @@ export async function before(_0x1b13a5) {
 }
 
 function _0x220a() {
-    const _0x2b5aff = ['5486848jAsAbl', 'chat', '4234505AZillW', '*طلع فاشل و استسلم :( !*', 'data', '839315AzSgbS', ' دولار', '84JNUYgx', 'stringify', 'sender', '1wdLRru', '1564142itPZfk', '2236242IiCXuN', '5760QvEEYQ', '23990tfBFNh', '12xXJdKZ', '8167999guqQrl', 'quoted', ' **اجـابـة خـاطـئـة❌ ❯', '*🚀 السؤال خلص يا احول', 'tebakbendera', 'trim', 'name', 'reply', 'text', 'test', 'exp', 'parse', 'toLowerCase', 'isBaileys', '8mtETxq'];
+    const _0x2b5aff = ['5486848jAsAbl', 'chat', '4234505AZillW', '*طلع فاشل و استسلم :( !*', 'data', '839315AzSgbS', ' دولار', '84JNUYgx', 'stringify', 'sender', '1wdLRru', '1564142itPZfk', '2236242IiCXuN', '5760QvEEYQ', '23990tfBFNh', '12xXJdKZ', '8167999guqQrl', 'quoted', '*اجـابـة خـاطـئـة❌ ❯*', '*🚀 السؤال خلص يا احول*', 'tebakbendera', 'trim', 'name', 'reply', 'text', 'test', 'exp', 'parse', 'toLowerCase', 'isBaileys', '8mtETxq'];
     _0x220a = function () {
         return _0x2b5aff;
     };
