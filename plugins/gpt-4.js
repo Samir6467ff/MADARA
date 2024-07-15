@@ -22,7 +22,7 @@ await m.reply(res.data)
 } catch {
 }}}
 
-if (command == 'بوت' || command == 'مادارا' || command == 'gpt') {
+if (command == 'gpt4' || command == 'gpt' || command == 'gpt') {
 conn.sendPresenceUpdate('composing', m.chat);
 let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/blackbox?text=${text}`) 
 let res = await gpt.json()
