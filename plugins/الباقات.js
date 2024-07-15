@@ -22,11 +22,12 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
     let more = String.fromCharCode(8206);
     let readMore = more.repeat(850);
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
   await conn.sendMessage(m.chat, { react: { text: '🚀', key: m.key } })
   const harley = 'https://telegra.ph/file/f97d2943120c84579f236.png'
  
-conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `alucard`}, body: { text: `*مــرحــبــا بــك/ي يــا* ${taguser}
+conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*مــرحــبــا بــك/ي يــا* ${taguser}
 ╗──────¤
 > ⌈🚀╎سورس مادارا╎🚀⌋
 > •اختار احدي الباقات في الاسفل
