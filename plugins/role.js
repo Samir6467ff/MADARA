@@ -25,17 +25,13 @@ while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 *┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
 *╰━⊰ ${lenguajeGB.smsAutoLv1()} ⊱━━დ*
 
-*_${lenguajeGB.smsAutoLv6()}_*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐌𝐀𝐃𝐀𝐑𝐀-𝐁𝐎𝐓 © 𝐁𝐘 𝐇𝐀𝐑𝐋𝐄𝐘 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}) */
-conn.sendButton(m.chat, '🐈 ' + wm, `> ˼👾˹↜ الــلــفــل ↶
-╮───────────────────⟢ـ
-┆˼🛟˹┆ المـنـشـن ♪ ⌊${taguser}⌉
-┆˼⛽˹┆ اللفل السابق♪ ⌊⌈${before}⌉
-┆˼🚀˹┆ اللفل الجديد♪ ⌊${user.level}⌉
-┆˼🪪˹┆ الـرتبـة♪ ⌊*${user.role}*⌉
-┆˼👨🏻‍💻˹┆ *الــمـطـور♪ ⌊*هــارلــي لايــت ⌉
-╯───────────────────⟢ـ
-> كلما تفاعلت مع البوت ارتفع مستواك
-> مــادار🐢ــا بــوت
+*_${lenguajeGB.smsAutoLv6()}_*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}) */
+conn.sendButton(m.chat, '🐈 ' + wm, `*╭━⊰ ${username} ⊱━დ*
+*┃ ${lenguajeGB.smsAutoLv2()} ${before}*
+*┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
+*┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
+*┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
+*╰━⊰ ${lenguajeGB.smsAutoLv1()} ⊱━━დ*
 
 *_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], null, null, fkontak)
 
