@@ -1,32 +1,32 @@
 import fetch from 'node-fetch';
+import axios from 'axios';
+import translate from '@vitalets/google-translate-api';
+import {Configuration, OpenAIApi} from 'openai';
+const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
+const openaiii = new OpenAIApi(configuration);
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()}*منور ياقلب مادارا اكتب اي سؤال عشان ارد عليك👾\n\n*❏ مثال*\n❏ ${usedPrefix + command} \n❏ ${usedPrefix + command} مادارا من هو مخترع الهواتف؟.`    
 
-let handler = async (m, { conn, text }) => {
+if (command == 'مادارا' || command == 'بوت') {
+try {
+conn.sendPresenceUpdate('composing', m.chat);
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`)
+let res = await gpt.json()
+await m.reply(res.gpt)
+} catch {
+try {
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`)
+let res = await gpt.json()
+await m.reply(res.data)
+} catch {
+}}}
 
-    if (!text) throw "*منور ياقلب مادارا اكتب اي سؤال عشان ارد عليك👾*\n\n*مثال: .مادارا من هو مخترع الهواتف؟*";
-
-    try {
-        await conn.sendMessage(m.chat, { text: "*انتظر لحظة بينما أفكر في إجابتك...💭*" }, { quoted: m });
-
-        const kurosakiApi = `https://api-kurosaki-dev0.osc-fr1.scalingo.io/api/ai/gpt4?q=${encodeURIComponent(text)}`;
-        var response = await fetch(kurosakiApi);
-        var res = await response.json();
-
-        if (res.status) {
-            if (res.kurosaki) {
-                await conn.sendFile(m.chat, 'https://telegra.ph/file/4e1d30091b0ae4c5258bc.jpg', 'image.png', res.kurosaki, m, { caption: res.kurosaki });
-            } else {
-                await conn.sendMessage(m.chat, "*لم يتم العثور على نتيجة مناسبة لإجابتك. حاول مرة أخرى*", { quoted: m });
-            }
-        } else {
-            await conn.sendMessage(m.chat, "*حدث خطأ أثناء محاولة الحصول على الإجابة. الرجاء المحاولة لاحقاً*", { quoted: m });
-        }
-    } catch (error) {
-        console.error(error);
-        await conn.sendMessage(m.chat, "*فشل، الرجاء المحاولة في وقت لاحق*", { quoted: m });
-    }
-};
-
-handler.command = ['بوت', 'مادارا'];
-handler.tags = ['ai'];
-handler.help = ['gpt4 <النص> - للحصول على إجابة باستخدام GPT-4'];
+if (command == 'بوت' || command == 'مادارا' || command == 'gpt') {
+conn.sendPresenceUpdate('composing', m.chat);
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`) 
+let res = await gpt.json()
+await m.reply(res.gpt)
+}}
+handler.command = /^(بوت|chatgpt|ia|ai|openai2|gpt|مادارا)$/i;
 export default handler;
