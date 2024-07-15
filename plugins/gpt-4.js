@@ -11,12 +11,12 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}*منور ياقلب مادار�
 if (command == 'مادارا' || command == 'بوت') {
 try {
 conn.sendPresenceUpdate('composing', m.chat);
-let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`)
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/blackbox?text=${text}`)
 let res = await gpt.json()
 await m.reply(res.gpt)
 } catch {
 try {
-let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`)
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/blackbox?text=${text}`)
 let res = await gpt.json()
 await m.reply(res.data)
 } catch {
@@ -24,7 +24,7 @@ await m.reply(res.data)
 
 if (command == 'بوت' || command == 'مادارا' || command == 'gpt') {
 conn.sendPresenceUpdate('composing', m.chat);
-let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/gpt4?text=${text}`) 
+let gpt = await fetch(`https://zoro-api-zoro-bot-5b28aebf.koyeb.app/api/blackbox?text=${text}`) 
 let res = await gpt.json()
 await m.reply(res.gpt)
 }}
