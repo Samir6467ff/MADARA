@@ -97,7 +97,7 @@ let str = `👑 𝐌𝐀𝐃𝐀𝐑𝐀-𝐁𝐎𝐓 - 𝐇𝐀𝐑𝐋𝐄𝐘
 > 𝐌𝐀𝐃𝐀𝐑𝐀-𝐁𝐎𝐓 © 𝐁𝐘 𝐇𝐀𝐑𝐋𝐄𝐘
 *╰━⊰ 🎖️ مستوى جديد 🎖️ ⊱━━დ*
 
-*_لقد وصلت إلى مستوى جديد!!!_*
+*_لقد وصلت إلى مستوى جديد!!!_*`.trim()
 try {
 const img = await levelup(teks, user.level)
 conn.sendMessage(m.chat, {image: {url: gataImg}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
